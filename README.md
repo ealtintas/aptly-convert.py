@@ -8,6 +8,8 @@ Automation script for hard-linking the DEB files in a directory into another dir
 
 This script create hard links for the DEB files into the aptly pool directory structure. You can use the script for any directory structure conatining debs such as the mirrored with apt-mirror. The new directory structure of the file be comaptible with aptly.  So when you update your mirror the deb files will not be downloaded again. Hardlinks are used to save time and disk space. It is recommended to use a temproary aptly pool folder and then merge the contents using rsync etc. manually. After checking everthing is ok, you can safely delete ("rm", "rm -rf") the old DEB files since they are already hard linked to new directory structure.
 
+I have written this script to trasnfer my local apt-mirror repositories to aptly. It saved me a lot of time and bandwidth. Since it uses hardlinks, it doesn't require extra disk space. I hope it to be usefull for others.
+
 ## Usage
 
 usage: aptly-convert.py [-h] [--verbosity VERBOSITY] [--src_path SRC_PATH]
