@@ -2,14 +2,10 @@
 #
 # script: aptly-convert.py
 #
-# This script moves the deb files into aptly pool directory structure.
-# You can use the script for any directory structure conatining 
-# debs such as the mirrored with apt-mirror.
-# The new directory structure of the file be comaptible with aptly. 
-# So when you update your mirror the deb files will not be downloaded
-# again. Hardlinks are used to save time and disk space. It is 
-# recommended to use a temproary aptly pool folder and then merge the 
-# contents using rsync etc. manually. 
+# This script creates hard links for the DEB files into the aptly pool directory structure.
+# You can use the script for any directory structure conatining DEB files (such as the default 
+# mirror directory "/var/spool/apt-mirror" for DEB files mirrored with apt-mirror).
+# After executing this script the new directory structure of the files be comaptible with aptly. 
 
 import os
 import sys
