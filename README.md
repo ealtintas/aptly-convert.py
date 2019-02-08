@@ -16,6 +16,7 @@ I have written this script to transfer my local apt-mirror repositories to aptly
 
 ## Usage
 
+```
 usage: aptly-convert.py [-h] [--verbosity VERBOSITY] [--src_path SRC_PATH]
                         [--dst_path DST_PATH]
 
@@ -33,3 +34,4 @@ optional arguments:
                         Destination directory that will contain the DEB files
                         in aptly pool structure (defaults to
                         "/var/spool/aptly/pool")
+```
