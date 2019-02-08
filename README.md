@@ -10,9 +10,9 @@ This script creates hard links for the DEB files into the aptly pool directory s
 
 After executing this script the new directory structure of the files be comaptible with aptly.  So when you update your aptly mirror the DEB files will not be downloaded again. Hardlinks are used to save time and disk space. 
 
-I you already have an aptly pool containing some files, it is recommended to use a temproary aptly pool folder and then merge the contents using rsync etc. manually. After checking everthing is ok, you can safely delete ("rm", "rm -rf") the old DEB files since they are already hard linked to new directory structure.
+I you already have an aptly pool containing some files, it is recommended to use a temporary aptly pool folder and then merge the contents using rsync etc. manually. After checking everthing is ok, you can safely delete ("rm", "rm -rf") the old DEB files since they are already hard linked to new directory structure.
 
-I have written this script to trasnfer my local apt-mirror repositories to aptly. It saved me a lot of time and bandwidth. Since it uses hardlinks, it doesn't require extra disk space. I hope it will be usefull for others.
+I have written this script to transfer my local apt-mirror repositories to aptly. It saved me a lot of time and bandwidth. Since it uses hardlinks, it doesn't require extra disk space. I hope it will be usefull for others.
 
 ## Usage
 
