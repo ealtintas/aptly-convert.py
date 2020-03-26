@@ -1,5 +1,7 @@
 # aptly-convert.py
 
+**Turkish:** Python ile yazılmış olan bu betik, bir dizinde ve alt dizinlerinde yer alan çok sayıdaki "*.deb" paketlerini modern bir paket deposu aracı olan "aptly"nin kullandığı dizin yapısına göre çok hızlı bir şekilde yeniden oluşturmanızı sağlar. Böylece örneğin Pardus, Debian, Ubuntu gibi ".DEB" uzantılı paketlerler çalışan Linux dağıtımlarında "apt-mirror" ile oluşturulmuş yerel depo yansılarını (varsayılan dizin "/var/spool/apt-mirror") GB'larca veriyi yeniden indirmek zorunda kalmadan saniyeler için aptly'nin kullanacağı şekilde yeniden organize edebilirsiniz. Betik zamandan ve disk alanından tasarruf etmek için paketlerin kopyasını oluşturmaz, bunun yerine sadece "hard link" oluşturur. Artık aski dizin yapısını kullanmayacaksanız işlem bittikten sonra eski dosyaları güvenle silebilirsiniz.
+
 ## Description
 
 Automation script for hard-linking the DEB files in a directory into another directory using the aptly pool directory structure.
