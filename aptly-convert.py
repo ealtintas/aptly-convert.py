@@ -5,7 +5,7 @@
 # This script creates hard links for the DEB files into the aptly pool directory structure.
 # You can use the script for any directory structure conatining DEB files (such as the default 
 # mirror directory "/var/spool/apt-mirror" for DEB files mirrored with apt-mirror).
-# After executing this script the new directory structure of the files be comaptible with aptly. 
+# After executing this script the new directory structure of the files will be comaptible with aptly. 
 
 import os
 import sys
